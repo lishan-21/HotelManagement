@@ -1,16 +1,14 @@
 package hotel;
 
-/**
- * Empty是InHotel和OutHotel的父类，实现房间状态的查询。
- */
+
 public class Empty {
+    /**
+     * mr 主程序对象
+     */
     MainRun mr = new MainRun();
-    boolean isEmpty(int roomNo){
-        if("EMPTY".equals(mr.getRoom()[(roomNo/100)-1][(roomNo%100)-1])){
-            return true;
-        }else{
-            return false;
-        }
+
+    boolean isEmpty(int roomNo) {
+        return "EMPTY".equals(mr.getRoom()[(roomNo / 100) - 1][(roomNo % 100) - 1]);
     }
 
 }
