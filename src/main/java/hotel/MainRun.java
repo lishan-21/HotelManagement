@@ -40,10 +40,13 @@ public class MainRun {
         }
     }
 
-    private static void command() {
+    /**command
+     *
+     */
+    public static void command() {
         String comm; //表示用户输入的命令
-        while (true) {
 
+        while (true) {
             System.out.println("请输入命令: ");
             Scanner sca = new Scanner(System.in);
             System.gc();

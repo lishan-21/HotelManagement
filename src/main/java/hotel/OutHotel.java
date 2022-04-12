@@ -1,12 +1,15 @@
 package hotel;
 
 public class OutHotel extends Empty {
+     /**
+     * mr mainRun
+     */
+     MainRun mr = new MainRun();
     /**out退房方法
      * @param roomNo 房间号
      * @return 入住结果
      */
     public String out(int roomNo) {
-        MainRun mr = new MainRun();
         if (isEmpty(roomNo)) {
             return "该房间没有客人入住，退房失败!";
         } else {
